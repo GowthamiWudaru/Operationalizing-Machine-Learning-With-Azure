@@ -1,0 +1,99 @@
+azureuser@compute-i:/mnt/batch/tasks/shared/LS_root/mounts/clusters/compute-i/code/Users/odl_user_129320$ python logs.py 
+2020-12-05T14:51:29.1033166Z stdout F 2020-12-05T14:51:29,101958800+00:00 - gunicorn/run 
+2020-12-05T14:51:29.106349Z stdout F 2020-12-05T14:51:29,104749200+00:00 - iot-server/run 
+2020-12-05T14:51:29.125311Z stdout F 2020-12-05T14:51:29,123824400+00:00 - rsyslog/run 
+2020-12-05T14:51:29.1613159Z stdout F 2020-12-05T14:51:29,143852800+00:00 - nginx/run 
+2020-12-05T14:51:29.1643175Z stderr F /usr/sbin/nginx: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libcrypto.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+2020-12-05T14:51:29.1653082Z stderr F rsyslogd: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libuuid.so.1: no version information available (required by rsyslogd)
+2020-12-05T14:51:29.1713113Z stderr F /usr/sbin/nginx: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libcrypto.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+2020-12-05T14:51:29.1713113Z stderr F /usr/sbin/nginx: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+2020-12-05T14:51:29.1713113Z stderr F /usr/sbin/nginx: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+2020-12-05T14:51:29.1713113Z stderr F /usr/sbin/nginx: /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/libssl.so.1.0.0: no version information available (required by /usr/sbin/nginx)
+2020-12-05T14:51:31.0391228Z stdout F Starting gunicorn 19.9.0
+2020-12-05T14:51:31.0391228Z stdout F Listening at: http://127.0.0.1:31311 (70)
+2020-12-05T14:51:31.0391228Z stdout F Using worker: sync
+2020-12-05T14:51:31.040091Z stdout F worker timeout is set to 300
+2020-12-05T14:51:31.1200984Z stdout F Booting worker with pid: 95
+2020-12-05T14:51:31.1650981Z stdout F EdgeHubConnectionString and IOTEDGE_IOTHUBHOSTNAME are not set. Exiting...
+2020-12-05T14:51:31.1730973Z stdout F 2020-12-05T14:51:31,171788900+00:00 - iot-server/finish 1 0
+2020-12-05T14:51:31.1761104Z stdout F 2020-12-05T14:51:31,174445600+00:00 - Exit code 1 is normal. Not restarting iot-server.
+2020-12-05T14:51:34.141049Z stdout F SPARK_HOME not set. Skipping PySpark Initialization.
+2020-12-05T14:51:34.141049Z stdout F Generating new fontManager, this may take some time...
+2020-12-05T14:51:37.1589853Z stdout F Initializing logger
+2020-12-05T14:51:37.1589853Z stdout F 2020-12-05 14:51:37,156 | root | INFO | Starting up app insights client
+2020-12-05T14:51:37.1589853Z stdout F Starting up app insights client
+2020-12-05T14:51:37.1589853Z stdout F 2020-12-05 14:51:37,157 | root | INFO | Starting up request id generator
+2020-12-05T14:51:37.1589853Z stdout F Starting up request id generator
+2020-12-05T14:51:37.1589853Z stdout F 2020-12-05 14:51:37,157 | root | INFO | Starting up app insight hooks
+2020-12-05T14:51:37.1589853Z stdout F Starting up app insight hooks
+2020-12-05T14:51:37.1599809Z stdout F 2020-12-05 14:51:37,158 | root | INFO | Invoking user's init function
+2020-12-05T14:51:37.1599809Z stdout F Invoking user's init function
+2020-12-05T14:51:43.0985493Z stderr F /azureml-envs/azureml_7cf2b5eebfc9a832d561ce064cfbc38b/lib/python3.6/site-packages/sklearn/externals/joblib/__init__.py:15: FutureWarning: sklearn.externals.joblib is deprecated in 0.21 and will be removed in 0.23. Please import this functionality directly from joblib, which can be installed with: pip install joblib. If this warning is raised when loading pickled models, you may need to re-serialize those models with scikit-learn 0.21+.
+2020-12-05T14:51:43.0985493Z stderr F   warnings.warn(msg, category=FutureWarning)
+2020-12-05T14:51:43.0985493Z stdout F 2020-12-05 14:51:43,096 | root | INFO | Users's init has completed successfully
+2020-12-05T14:51:43.0985493Z stdout F Users's init has completed successfully
+2020-12-05T14:51:43.1045754Z stdout F 2020-12-05 14:51:43,103 | root | INFO | Skipping middleware: dbg_model_info as it's not enabled.
+2020-12-05T14:51:43.105541Z stdout F Skipping middleware: dbg_model_info as it's not enabled.
+2020-12-05T14:51:43.105541Z stdout F 2020-12-05 14:51:43,104 | root | INFO | Skipping middleware: dbg_resource_usage as it's not enabled.
+2020-12-05T14:51:43.1065842Z stdout F Skipping middleware: dbg_resource_usage as it's not enabled.
+2020-12-05T14:51:43.1095417Z stdout F 2020-12-05 14:51:43,107 | root | INFO | Scoring timeout is found from os.environ: 60000 ms
+2020-12-05T14:51:43.1095417Z stdout F Scoring timeout is found from os.environ: 60000 ms
+2020-12-05T14:51:43.1221748Z stdout F 2020-12-05 14:51:43,119 | root | INFO | 200
+2020-12-05T14:51:43.1221748Z stdout F 200
+2020-12-05T14:51:43.1231818Z stdout F 127.0.0.1 - - [05/Dec/2020:14:51:43 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T14:54:23.7258681Z stdout F 2020-12-05 14:54:23,714 | root | INFO | 200
+2020-12-05T14:54:23.7258681Z stdout F 200
+2020-12-05T14:54:23.7268642Z stdout F 127.0.0.1 - - [05/Dec/2020:14:54:23 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T14:54:25.6569053Z stdout F 2020-12-05 14:54:25,645 | root | INFO | 200
+2020-12-05T14:54:25.6569053Z stdout F 200
+2020-12-05T14:54:25.6578964Z stdout F 127.0.0.1 - - [05/Dec/2020:14:54:25 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:01:20.4744696Z stdout F 2020-12-05 15:01:20,436 | root | INFO | 200
+2020-12-05T15:01:20.4744696Z stdout F 200
+2020-12-05T15:01:20.4754693Z stdout F 127.0.0.1 - - [05/Dec/2020:15:01:20 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:01:21.8282156Z stdout F 2020-12-05 15:01:21,789 | root | INFO | 200
+2020-12-05T15:01:21.8282156Z stdout F 200
+2020-12-05T15:01:21.8292257Z stdout F 127.0.0.1 - - [05/Dec/2020:15:01:21 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:02:09.1482135Z stdout F 2020-12-05 15:02:09,108 | root | INFO | 200
+2020-12-05T15:02:09.1482135Z stdout F 200
+2020-12-05T15:02:09.1502143Z stdout F 127.0.0.1 - - [05/Dec/2020:15:02:09 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:02:09.922442Z stdout F 2020-12-05 15:02:09,881 | root | INFO | 200
+2020-12-05T15:02:09.922442Z stdout F 200
+2020-12-05T15:02:09.924482Z stdout F 127.0.0.1 - - [05/Dec/2020:15:02:09 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:02:20.0005483Z stdout F 2020-12-05 15:02:19,959 | root | INFO | 200
+2020-12-05T15:02:20.0005483Z stdout F 200
+2020-12-05T15:02:20.0015554Z stdout F 127.0.0.1 - - [05/Dec/2020:15:02:19 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+2020-12-05T15:04:07.5111149Z stdout F 2020-12-05 15:04:07,463 | root | INFO | 200
+2020-12-05T15:04:07.5111149Z stdout F 200
+2020-12-05T15:04:07.5131303Z stdout F 127.0.0.1 - - [05/Dec/2020:15:04:07 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:04:08.2813611Z stdout F 2020-12-05 15:04:08,232 | root | INFO | 200
+2020-12-05T15:04:08.2813611Z stdout F 200
+2020-12-05T15:04:08.282416Z stdout F 127.0.0.1 - - [05/Dec/2020:15:04:08 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:06:15.8102506Z stdout F 2020-12-05 15:06:15,753 | root | INFO | 200
+2020-12-05T15:06:15.8102506Z stdout F 200
+2020-12-05T15:06:15.8102506Z stdout F 127.0.0.1 - - [05/Dec/2020:15:06:15 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:06:48.9167212Z stdout F 2020-12-05 15:06:48,859 | root | INFO | 200
+2020-12-05T15:06:48.9167212Z stdout F 200
+2020-12-05T15:06:48.9187154Z stdout F 127.0.0.1 - - [05/Dec/2020:15:06:48 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:06:49.8153439Z stdout F 2020-12-05 15:06:49,757 | root | INFO | 200
+2020-12-05T15:06:49.8153439Z stdout F 200
+2020-12-05T15:06:49.8153439Z stdout F 127.0.0.1 - - [05/Dec/2020:15:06:49 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:06:59.851547Z stdout F 2020-12-05 15:06:59,792 | root | INFO | 200
+2020-12-05T15:06:59.851547Z stdout F 200
+2020-12-05T15:06:59.852567Z stdout F 127.0.0.1 - - [05/Dec/2020:15:06:59 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:07:01.2767734Z stdout F 2020-12-05 15:07:01,218 | root | INFO | 200
+2020-12-05T15:07:01.2767734Z stdout F 200
+2020-12-05T15:07:01.2777667Z stdout F 127.0.0.1 - - [05/Dec/2020:15:07:01 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:07:43.0437033Z stdout F 2020-12-05 15:07:42,982 | root | INFO | 200
+2020-12-05T15:07:43.0437033Z stdout F 200
+2020-12-05T15:07:43.0447336Z stdout F 127.0.0.1 - - [05/Dec/2020:15:07:42 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:07:43.9305154Z stdout F 2020-12-05 15:07:43,869 | root | INFO | 200
+2020-12-05T15:07:43.9305154Z stdout F 200
+2020-12-05T15:07:43.9315221Z stdout F 127.0.0.1 - - [05/Dec/2020:15:07:43 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:09:10.7222634Z stdout F 2020-12-05 15:09:10,657 | root | INFO | 200
+2020-12-05T15:09:10.7222634Z stdout F 200
+2020-12-05T15:09:10.7242509Z stdout F 127.0.0.1 - - [05/Dec/2020:15:09:10 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+2020-12-05T15:09:12.292325Z stdout F 2020-12-05 15:09:12,226 | root | INFO | 200
+2020-12-05T15:09:12.292325Z stdout F 200
+2020-12-05T15:09:12.2934379Z stdout F 127.0.0.1 - - [05/Dec/2020:15:09:12 +0000] "GET /swagger.json HTTP/1.0" 200 3286 "-" "Go-http-client/1.1"
+
+azureuser@compute-i:/mnt/batch/tasks/shared/LS_root/mounts/clusters/compute-i/code/Users/odl_user_129320$ 

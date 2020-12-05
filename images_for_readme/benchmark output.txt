@@ -1,0 +1,172 @@
+demouser@labvm MINGW64 ~/Desktop/nd00333_AZMLND_C2-master/starter_files
+$ bash benchmark.sh
+This is ApacheBench, Version 2.3 <$Revision: 1879490 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking a11fd71d-e03a-4880-a86f-9f20df18289e.southcentralus.azurecontainer.io (be patient)...INFO: POST header ==
+---
+POST /score HTTP/1.0
+Content-length: 812
+Content-type: application/json
+Authorization: Bearer 1eE4VjRKAW98zndFae0xwVRMfxW66r3e
+Host: a11fd71d-e03a-4880-a86f-9f20df18289e.southcentralus.azurecontainer.io
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:32 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: f6f3f14c-a9b3-4258-8b72-e8989fa97174
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:32 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 47aacbab-e299-4884-bc58-60c795fe43f6
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:32 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 2f93cd90-59cf-487b-8af8-f6be8088d8fd
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:33 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 85dff57d-f5d5-4d73-a839-c1b1568ae1b0
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:33 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: a95dc114-0274-4769-b55e-b8e47a8a54b1
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:33 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 54100259-0741-4282-bc10-4698070bf916
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:34 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 86b6eebd-66da-4532-b61b-295556455556
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:34 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 59ebdcf7-411f-446b-a8d3-35314188d465
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:34 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 8cebd90b-4824-4965-8d71-ff80f2d74d21
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.0 200 OK
+Content-Length: 32
+Content-Type: application/json
+Date: Sat, 05 Dec 2020 16:07:35 GMT
+Server: nginx/1.10.3 (Ubuntu)
+X-Ms-Request-Id: 38f18fd6-f8fe-4240-bb5f-ad4df19244d1
+X-Ms-Run-Function-Failed: False
+
+"{\"result\": [\"no\", \"no\"]}"
+LOG: Response code = 200
+..done
+
+
+Server Software:        nginx/1.10.3
+Server Hostname:        a11fd71d-e03a-4880-a86f-9f20df18289e.southcentralus.azurecontainer.io
+Server Port:            80
+
+Document Path:          /score
+Document Length:        32 bytes
+
+Concurrency Level:      1
+Time taken for tests:   3.029 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      2590 bytes
+Total body sent:        10640
+HTML transferred:       320 bytes
+Requests per second:    3.30 [#/sec] (mean)
+Time per request:       302.904 [ms] (mean)
+Time per request:       302.904 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.84 [Kbytes/sec] received
+                        3.43 kb/s sent
+                        4.27 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        2    2   0.0      2       2
+Processing:   288  301   8.4    300     317
+Waiting:      288  301   8.4    300     317
+Total:        290  303   8.4    302     319
+
+Percentage of the requests served within a certain time (ms)
+  50%    302
+  66%    307
+  75%    309
+  80%    310
+  90%    319
+  95%    319
+  98%    319
+  99%    319
+ 100%    319 (longest request)
+
+demouser@labvm MINGW64 ~/Desktop/nd00333_AZMLND_C2-master/starter_files
+$
