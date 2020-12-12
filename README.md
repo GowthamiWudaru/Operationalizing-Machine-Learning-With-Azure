@@ -1,6 +1,6 @@
 # Operationalizing-Machine-Learning-With-Azure
 
-<p>We use Azure to configure a cloud-based machine learning production model, deploy it, and consume it. We also create, publish, and consume a pipeline.</p>
+We use Azure to configure a cloud-based machine learning production model, deploy it to a REST EP(URI + authentication key) for real-time inferencing, and consume it. We also create, publish to REST EP, and consume a pipeline.
 
 <img alt="project overview" src="https://github.com/GowthamiWudaru/Operationalizing-Machine-Learning-With-Azure/blob/main/images_for_readme/projectoverview.png">
 
@@ -10,8 +10,8 @@
 
 # Key Steps
 
-<h3>Deploy model in Azure ML Studio</h3>
-<p> We first register a dataset and create an automl run. Once the run is complete, we can deploy the best model. After deployment, the model is registered and Endpoint is available for us to use. We then enable application insights for this EP with help of logs.py script. After that we make use of swagger URI provided in the EP and run both swagger.sh and serve.py so we can see the swagger documentation (It gives us a place to check what paths are available and the expected requests and responses). We run endpoint.py which send request to REST URI and valid JSON response can be seen in the output. Additionally, we use apache benchmark to get the stats of the EP.
+### Deploy model in Azure ML Studio
+We first register a dataset and create an automl run. Once the run is complete, we can deploy the best model. After deployment, the model is registered and Endpoint is available for us to use. We then enable application insights for this EP with help of logs.py script. After that we make use of swagger URI provided in the EP and run both swagger.sh and serve.py so we can see the swagger documentation (It gives us a place to check what paths are available and the expected requests and responses). We run endpoint.py which send request to REST URI and valid JSON response can be seen in the output. Additionally, we use apache benchmark to get the stats of the EP.
   
 Register Dataset
 <img alt="dataset registered" src="https://github.com/GowthamiWudaru/Operationalizing-Machine-Learning-With-Azure/blob/main/images_for_readme/dataset.png">
@@ -44,8 +44,8 @@ benchmark.sh output - <a target="_blank" href="https://github.com/GowthamiWudaru
 <img alt="apache benchmark output" src="https://github.com/GowthamiWudaru/Operationalizing-Machine-Learning-With-Azure/blob/main/images_for_readme/benchmarkoutput1.png">
 <img alt="apache benchmark stats" src="https://github.com/GowthamiWudaru/Operationalizing-Machine-Learning-With-Azure/blob/main/images_for_readme/benchmarkoutput2.png">
 
-<h3>Pipeline</h3>
-<p>We create and publish a pipeline containing an automl module and the dataset. The pipeline is invoked using the pipeline REST EP(The last run will have finished status in Screencast)</p>
+### Pipeline
+We create and publish a pipeline containing an automl module and the dataset. The pipeline is invoked using the pipeline REST EP(The last run will have finished status in Screencast)
 
 Create and publish a pipeline
 <img alt="pipeline EP is active" src="https://github.com/GowthamiWudaru/Operationalizing-Machine-Learning-With-Azure/blob/main/images_for_readme/pipelineEP.png">
@@ -61,7 +61,11 @@ Use a REST endpoint to interact with a Pipeline
 
 # Future work
 
-<p>As of now, we only have automl run in the pipeline. We can add the deploy best model(if the primary metric is in required range) to the pipeline and also add a simple health check for the REST EP</p>
+As of now, we only have automl run in the pipeline. We can add the deploy best model(if the primary metric is in required range) to the pipeline and also add a simple health check for the REST EP.
+
+Using Service principal for authentication as it is a better way to write secure scripts or programs, allowing you to apply both permissions restrictions and locally stored static credential information.
+
+The model performance can be improved by giving a balanced dataset as input(by undersampling or oversampling methods) and by exploring the automl config(like adding custom FeaturizationConfig)
 
 # Screen Recording
 
